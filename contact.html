@@ -1,0 +1,109 @@
+<!-- contact.html - Contact & Engagement (approx 210 lines) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola | Contact & Support</title>
+</head>
+<body>
+
+    <header>
+        <h1>📞 Contact Coca-Cola</h1>
+        <nav>
+            <a href="index.html"> <i class="fa-solid fa-house"></i>Homepage</a> &nbsp;|&nbsp;
+            <a href="about.html"> <i class="fa-solid fa-book"></i>About / History</a> &nbsp;|&nbsp;
+            <a href="product.html"><i class="fa-solid fa-cup-straw"></i>Products</a> &nbsp;|&nbsp;
+            <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a> &nbsp;|&nbsp;
+            <a href="analysis.html"><i class="fa-solid fa-chart-mixed"></i>Analysis</a> &nbsp;|&nbsp;
+            <a href="design.html"><i class="fa-sharp fa-solid fa-paintbrush"></i> Design</a>
+        </nav>
+        <hr>
+        <p><strong>We love hearing from teens, families, and young adults.</strong> Reach out for feedback, partnership inquiries, or just to share your Coca-Cola moment.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>📱 Customer Service & Support</h2>
+            <p><strong>South Africa Helpline (toll-free):</strong> 0800 123 456</p>
+            <p><strong>International:</strong> +27 (0)11 555 7890</p>
+            <p><strong>WhatsApp Support:</strong> +27 61 234 5678 (Mon–Fri, 9am–5pm)</p>
+            <p><strong>Email:</strong> hello@coca-cola.com | support@coca-cola.co.za</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📍 Global Headquarters</h2>
+            <p>One Coca-Cola Plaza, Atlanta, GA 30313, United States</p>
+            <p><strong>Regional Office (Africa):</strong> Coca-Cola Beverages Africa, 1 Cokes Road, Midrand, Johannesburg, 1685</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📢 Social Media (Follow for engagement)</h2>
+            <ul>
+                <li>Instagram: <a href="#">@CocaCola</a></li>
+                <li>TikTok: <a href="#">@CocaCola</a></li>
+                <li>Facebook: <a href="#">Coca-Cola South Africa</a></li>
+                <li>Twitter/X: <a href="#">@CocaCola</a></li>
+                <li>YouTube: Coca-Cola Channel</li>
+            </ul>
+            <p><em>Share your moments with #RefreshTheWorld #ShareACoke</em></p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📝 Send a Message (Increase Online Engagement)</h2>
+            <p>Use this form to ask questions, give feedback, or request product info. This directly supports our KPI for online engagement.</p>
+            <form action="#" method="post" onsubmit="handleContact(event);">
+                <label for="fullname">Full Name (Teen / Parent / Adult):</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g., Thabo, Maria, or The Johnson Family" required size="40"><br><br>
+
+                <label for="contactEmail">Email Address:</label><br>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required size="40"><br><br>
+
+                <label for="ageGroup">Age Group / Audience:</label><br>
+                <select id="ageGroup" name="ageGroup">
+                    <option>Teenager (13-19)</option>
+                    <option>Young Adult (20-30)</option>
+                    <option>Parent / Family</option>
+                    <option>Other</option>
+                </select><br><br>
+
+                <label for="messageText">Your Message / Feedback:</label><br>
+                <textarea id="messageText" name="message" rows="5" cols="45" placeholder="Tell us about your favorite Coca-Cola product, suggestions, or questions..."></textarea><br><br>
+
+                <button type="submit">✉️ Send Message (Engagement +1)</button>
+            </form>
+            <p><small>We respond within 48 hours. Your interaction helps us measure online engagement KPI.</small></p>
+            <hr>
+        </section>
+
+        <section>
+            <h3>📊 Engagement Goals</h3>
+            <p>Target: 500+ contact form submissions per month. Each submission improves brand loyalty and provides valuable feedback.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>References: Official Coca-Cola contact policies, customer service best practices, web design resources for forms.</p>
+        <p>© 2025 Coca-Cola. All rights reserved. Project cost: R700–R1400 | Duration: 4 weeks.</p>
+    </footer>
+
+    <script>
+        let formSubmissions = 0;
+        function handleContact(event) {
+            event.preventDefault();
+            formSubmissions++;
+            console.log(`[KPI - Online Engagement] Contact form submitted. Total submissions: ${formSubmissions} at ${new Date().toISOString()}`);
+            alert(`✅ Thank you! Your message has been received.\nCoca-Cola values your engagement. (Total submissions: ${formSubmissions})`);
+            document.getElementById("fullname").value = "";
+            document.getElementById("contactEmail").value = "";
+            document.getElementById("messageText").value = "";
+            return false;
+        }
+        console.log("Contact page ready — form submissions will increase online engagement KPI.");
+    </script>
+</body>
+</html>

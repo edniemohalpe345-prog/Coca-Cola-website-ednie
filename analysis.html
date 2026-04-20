@@ -1,0 +1,113 @@
+<!-- analysis.html - Current Website Analysis & KPIs (approx 220 lines) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola | Website Analysis & KPIs</title>
+</head>
+<body>
+
+    <header>
+        <h1>📊 Coca-Cola Website Analysis</h1>
+        <nav>
+            <a href="index.html"> <i class="fa-solid fa-house"></i>Homepage</a> &nbsp;|&nbsp;
+            <a href="about.html"><i class="fa-solid fa-book"></i> About / History</a> &nbsp;|&nbsp;
+            <a href="product.html"> <i class="fa-solid fa-cup-straw"></i>Products</a> &nbsp;|&nbsp;
+            <a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a> &nbsp;|&nbsp;
+            <a href="analysis.html"><i class="fa-solid fa-chart-mixed"></i>Analysis</a> &nbsp;|&nbsp;
+            <a href="design.html"> <i class="fa-sharp fa-solid fa-paintbrush"></i>Design</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>3. Current Website Analysis</h2>
+            <h3>✅ Strengths:</h3>
+            <ul>
+                <li>Strong branding (iconic red and white identity).</li>
+                <li>Clear visuals that evoke happiness and refreshment.</li>
+                <li>Global recognition and trust.</li>
+            </ul>
+            <h3>⚠️ Weaknesses:</h3>
+            <ul>
+                <li>Too much information on the original homepage (cluttered).</li>
+                <li>Navigation could be overwhelming for new visitors.</li>
+                <li>Previous versions had slower loading due to heavy images/CSS.</li>
+            </ul>
+            <h3>🚀 Improvements (Implemented in this pure HTML version):</h3>
+            <ul>
+                <li><strong>Simpler navigation:</strong> Clear 6-page structure with consistent menu.</li>
+                <li><strong>Faster loading speed:</strong> Zero CSS, pure semantic HTML — loads instantly.</li>
+                <li><strong>Organized content:</strong> Each page focuses on one theme (home, about, products, contact, analysis, design).</li>
+                <li><strong>KPI tracking built-in:</strong> JavaScript logs traffic, time on site, and product clicks.</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📈 Website Goals & Objectives</h2>
+            <ol>
+                <li>Promote Coca-Cola products → <em>Product page with 7+ items.</em></li>
+                <li>Increase brand awareness → <em>History, mission, values included.</em></li>
+                <li>Provide product information → <em>Detailed descriptions, sizes, best-for notes.</em></li>
+                <li>Increase online engagement → <em>Contact form, social links, product click tracking.</em></li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📊 Key Performance Indicators (KPIs) Dashboard</h2>
+            <table border="1" cellpadding="8">
+                <thead>
+                    <tr><th>KPI</th><th>Measurement Method</th><th>Target</th><th>Current Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Website Traffic</td><td>Page load logs + console events</td><td>1000+ visits/week</td><td>Simulated via console tracking</td></tr>
+                    <tr><td>Time Spent on Site</td><td>JavaScript timers on each page</td><td>>3 minutes avg</td><td>Monitored via beforeunload events</td></tr>
+                    <tr><td>Product Clicks</td><td>trackProduct() function</td><td>200+ clicks/week</td><td>Logged per click; alerts shown</td></tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📅 Project Plan (4 Weeks)</h2>
+            <ul>
+                <li><strong>Week 1:</strong> Requirements & content gathering (done).</li>
+                <li><strong>Week 2:</strong> HTML structure (6 pages created).</li>
+                <li><strong>Week 3:</strong> KPI tracking implementation & testing.</li>
+                <li><strong>Week 4:</strong> Deployment & user feedback.</li>
+            </ul>
+            <p><strong>Budget allocation:</strong> R700–R1400 (hosting, domain, testing).</p>
+            <hr>
+        </section>
+
+        <section>
+            <h2>📚 References Used</h2>
+            <ul>
+                <li>Official Coca-Cola website (brand guidelines, product names).</li>
+                <li>Marketing textbooks: "Digital Engagement Strategies" (2024).</li>
+                <li>Web design resources: W3C HTML5 standards, accessibility guides.</li>
+                <li>KPI best practices from Google Analytics documentation.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>This analysis page documents the improvements over the old Coca-Cola website. Budget: R700–1400 | Duration: 4 weeks.</p>
+        <p>© 2025 Coca-Cola Web Design Project — No CSS, pure HTML for maximum speed.</p>
+    </footer>
+
+    <script>
+        console.log("[Analysis Page] Loaded. Weaknesses addressed: simpler navigation, faster speed, organized info.");
+        let analysisStart = Date.now();
+        window.addEventListener("beforeunload", () => {
+            let spent = Math.floor((Date.now() - analysisStart)/1000);
+            console.log(`[KPI - Time on Analysis Page] ${spent} seconds.`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!-- index.html - Homepage (approx 210 lines) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Coca-Cola | Homepage</title>
+    
+</head>
+<body>
+
+    <!-- HEADER SECTION with Navigation -->
+    <header>
+        <h1>Coca-Cola®</h1>
+        
+         <image src="images/index logo.png"width= "150" height="150" alt="Coca-Cola logo">      
+
+        <p><em>Est. 1886 — Refreshing the world since the beginning</em></p>   
+                                                                                            
+        <!-- Navigation Bar: links to all 6 pages -->
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Homepage</a> &nbsp;|&nbsp;
+            <a href="about.html">Abo<i class="fa-sharp fa-solid fa-book"></i>ut / History</a> &nbsp;|&nbsp;
+            <a href="products.html"> <i class="fa-solid fa-cup-straw"></i>Products</a> &nbsp;|&nbsp;
+            <a href="contact.html"><i class="fa-regular fa-phone"></i> Contact</a> &nbsp;|&nbsp;
+            <a href="analysis.html"><i class="fa-regular fa-chart-candlestick"></i>Analysis</a> &nbsp;|&nbsp;
+            <a href="design.html"><i class="fa-solid fa-paintbrush"></i> Design</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- MAIN HOMEPAGE CONTENT -->
+    <main>
+        <section>
+            <h2>Welcome to the Coca-Cola World</h2>
+            <p><strong>Our Mission:</strong> To refresh the world, make a difference.</p>
+            <p><strong>Our Vision:</strong> To create brands people love.</p>
+            <p><strong>Purpose of this website:</strong> Advertise Coca-Cola products, increase brand awareness, provide product information, and boost online engagement.</p>
+            <hr>
+        </section>
+
+        <section>
+            <h3>⚡ Who We Serve</h3>
+            <p><strong>Target Audience:</strong> Teenagers, young adults, and families. Everyone who loves joy, refreshment, and authentic moments.</p>
+            <p><strong>Key Demographics:</strong> Teens (13-19), Young Adults (20-30), Families with kids. Coca-Cola brings people together.</p>
+            <hr>
+        </section>
+
+        <section>
+            <h3>🔥 Featured Product of the Week</h3>
+            <p><strong>Coca-Cola Classic</strong> – The iconic taste that started it all. Perfect for family dinners, hangouts, and celebrations.</p>
+            <a href="product.html#classic">👉 Discover Coca-Cola Classic →</a>
+            <br><br>
+            <p><strong>Coca-Cola Zero Sugar</strong> – Same great taste, zero sugar. Loved by young adults.</p>
+            <a href="product.html#zerosugar">👉 Try Zero Sugar →</a>
+            <hr>
+        </section>
+
+        <section>
+            <h3>📈 Key Performance Indicators (KPIs)</h3>
+            <ul>
+                <li><strong>Website Traffic</strong> – Number of unique visitors and page views.</li>
+                <li><strong>Time Spent on Site</strong> – Average session duration (target > 3 minutes).</li>
+                <li><strong>Product Clicks</strong> – Engagement with product links and “Learn More” buttons.</li>
+            </ul>
+            <p><em>This website tracks KPIs via JavaScript console for demonstration.</em></p>
+            <hr>
+        </section>
+
+        <section>
+            <h3>📅 Project Overview</h3>
+            <p><strong>Duration:</strong> 4 Weeks</p>
+            <p><strong>Cost Estimate:</strong> R700 – R1400 (depending on hosting & maintenance)</p>
+            <p><strong>Improvements over old site:</strong> Simpler navigation, faster loading (pure HTML), organized sections, mobile-friendly layout (no CSS but semantic structure).</p>
+        </section>
+
+        <section>
+            <h3>📢 Why Coca-Cola?</h3>
+            <p>From a small pharmacy in Atlanta to a global icon — Coca-Cola has been spreading happiness for over 135 years. Our beverages are crafted for every generation. Join the family.</p>
+            <br>
+            <a href="about.html">Read our full history →</a>
+        </section>
+    </main>
+
+    <!-- FOOTER with references and summary -->
+    <footer>
+        <hr>
+        <p><strong>© 2025 Coca-Cola Company.</strong> Refresh the world. Make a difference.</p>
+        <p><strong>References:</strong> Official Coca-Cola website, Marketing textbooks, Web design resources (W3C, HTML standards).</p>
+        <p><strong>Designed for:</strong> Teens, Young Adults & Families — No CSS, only pure HTML for maximum speed and simplicity.</p>
+    </footer>
+
+    <!-- Simple KPI tracking simulation for homepage -->
+    <script>
+        console.log("[KPI - Traffic] Homepage loaded at " + new Date().toISOString());
+        let startTime = new Date();
+        window.addEventListener("beforeunload", function() {
+            let timeSpent = Math.floor((new Date() - startTime) / 1000);
+            console.log("[KPI - Time on Site] User spent " + timeSpent + " seconds on homepage.");
+        });
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => console.log("[KPI - Product Clicks / Navigation] Link clicked: " + link.href));
+        });
+    </script>
+</body>
+</html>

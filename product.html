@@ -1,0 +1,117 @@
+<!-- product.html - Products Catalog (approx 230 lines) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Coca-Cola | Products</title>
+</head>
+<body>
+
+    <header>
+        <h1>🥤 Coca-Cola Products</h1>
+        <img src="images/coke zero.webp" width="150" hight="150" alt="Coca-Cola zero">
+        <img src="images/coke diet.webp" width="150" height="150" alt="Coca-Cola diet>"
+        <nav>
+            <a href="index.html"> <i class="fa-solid fa-house"></i>Homepage</a> &nbsp;|&nbsp;
+            <a href="about.html"> <i class="fa-solid fa-book"></i>About / History</a> &nbsp;|&nbsp;
+            <a href="product.html"><i class="fa-solid fa-cup-straw"></i>Products</a> &nbsp;|&nbsp;
+            <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a> &nbsp;|&nbsp;
+            <a href="analysis.html"> <i class="fa-solid fa-chart-candlestick"></i>Analysis</a> &nbsp;|&nbsp;
+            <a href="design.html"><i class="fa-sharp fa-solid fa-paintbrush"></i> Design</a>
+        </nav>
+        <hr>
+        <p><strong>Explore our range of delicious beverages — for teens, young adults, and families.</strong> Click any product to track engagement (KPI: Product Clicks).</p>
+    </header>
+
+    <main>
+        <!-- Product Section with unique IDs for tracking -->
+        <section id="classic">
+            <h2>Coca-Cola Classic</h2>
+            <p><strong>Taste:</strong> The original, timeless cola with real sugar and iconic fizz.</p>
+            <p><strong>Best for:</strong> Family dinners, movie nights, BBQs.</p>
+            <p><strong>Available sizes:</strong> 330ml can, 500ml PET, 1.25L, 2L.</p>
+            <a href="#" onclick="trackProduct('Coca-Cola Classic'); return false;">👉 Click to learn more (product click KPI)</a>
+            <hr>
+        </section>
+
+        <section id="zerosugar">
+            <h2>Coca-Cola Zero Sugar</h2>
+            <p><strong>Taste:</strong> Real Coca-Cola taste with zero sugar and zero calories.</p>
+            <p><strong>Best for:</strong> Young adults, health-conscious teens, gamers.</p>
+            <p><strong>Available sizes:</strong> 330ml can, 500ml PET, 1.25L.</p>
+            <a href="#" onclick="trackProduct('Coca-Cola Zero Sugar'); return false;">👉 Click to explore Zero Sugar (track KPI)</a>
+            <hr>
+        </section>
+
+        <section id="diet">
+            <h2>Diet Coke</h2>
+            <p><strong>Taste:</strong> Light, crisp, and refreshing. A modern classic since 1982.</p>
+            <p><strong>Best for:</strong> Young professionals and on-the-go moments.</p>
+            <p><strong>Available sizes:</strong> 330ml can, 500ml bottle.</p>
+            <a href="#" onclick="trackProduct('Diet Coke'); return false;">👉 Click for Diet Coke info →</a>
+            <hr>
+        </section>
+
+        <section id="sprite">
+            <h2>Sprite</h2>
+            <p><strong>Taste:</strong> Lemon-lime, caffeine-free crispness.</p>
+            <p><strong>Best for:</strong> Teens, after-sports refreshment, summer days.</p>
+            <p><strong>Available sizes:</strong> 330ml can, 500ml, 1.25L, 2L.</p>
+            <a href="#" onclick="trackProduct('Sprite'); return false;">👉 Click for Sprite details →</a>
+            <hr>
+        </section>
+
+        <section id="fanta">
+            <h2>Fanta Orange</h2>
+            <p><strong>Taste:</strong> Bold, fruity orange with playful fizz.</p>
+            <p><strong>Best for:</strong> Kids, parties, colorful moments.</p>
+            <p><strong>Available sizes:</strong> 330ml can, 500ml, 1.5L.</p>
+            <a href="#" onclick="trackProduct('Fanta Orange'); return false;">👉 Click for Fanta →</a>
+            <hr>
+        </section>
+
+        <section id="smartwater">
+            <h2>smartwater</h2>
+            <p><strong>Taste:</strong> Vapor-distilled premium water with electrolytes.</p>
+            <p><strong>Best for:</strong> Active families, post-workout, hydration.</p>
+            <p><strong>Available sizes:</strong> 600ml, 1L, 1.5L.</p>
+            <a href="#" onclick="trackProduct('smartwater'); return false;">👉 Click for smartwater →</a>
+            <hr>
+        </section>
+
+        <section id="cherry">
+            <h2>Coca-Cola Cherry</h2>
+            <p><strong>Taste:</strong> Classic Coke with a cherry twist.</p>
+            <p><strong>Best for:</strong> Young adults who love bold flavor.</p>
+            <a href="#" onclick="trackProduct('Coca-Cola Cherry'); return false;">👉 Click for Cherry Coke →</a>
+            <hr>
+        </section>
+
+        <section>
+            <h3>📊 Product Click KPI Summary</h3>
+            <p>Each product link above logs a "product click" event in the browser console. This measures engagement and helps Coca-Cola understand which products interest our audience.</p>
+            <p><strong>Goal:</strong> Increase product clicks by 30% during the 4-week campaign.</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>References: Official Coca-Cola product catalog, marketing textbooks, retail data.</p>
+        <p>Budget: R700–R1400 | Duration: 4 weeks | All products are trademarks of The Coca-Cola Company.</p>
+    </footer>
+
+    <script>
+        let productClickCount = 0;
+        function trackProduct(productName) {
+            productClickCount++;
+            console.log(`[KPI - Product Click] ${productName} | Total clicks: ${productClickCount} | Time: ${new Date().toLocaleTimeString()}`);
+            alert(`🍹 Product tracked: ${productName}\n(Product clicks KPI increased. Total: ${productClickCount})`);
+            return true;
+        }
+        console.log("Products page ready — click any product link to simulate KPI tracking.");
+    </script>
+</body>
+</html>
