@@ -1,264 +1,486 @@
+/* styles.css
+   Coca-Cola Website Proposal - External Stylesheet */
 
+/* ---------- GLOBAL RESET & BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        
-        body {
-            font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-            background: #fef6f0;
-            color: #2c1810;
-            line-height: 1.5;
-            padding: 2rem 1.5rem;
-        }
+body {
+    font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: #fef6f0;
+    color: #2c1810;
+    padding: 2rem 1.5rem;
+}
 
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 32px;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+/* Container - main wrapper */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
-        /* navigation */
-        .nav-bar {
-            background: #9b2f1f;
-            padding: 1rem 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-        }
+/* ---------- TYPOGRAPHY ---------- */
+h1 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #b52b1e, #6f1e12);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
 
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1.8rem 0 0.8rem 0;
+    border-left: 6px solid #e62b1e;
+    padding-left: 1rem;
+    color: #2c1810;
+}
 
-        .logo-icon {
-            font-size: 1.8rem;
-        }
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.2rem 0 0.6rem 0;
+    color: #9b2f1f;
+}
 
-        .logo-text {
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: -0.3px;
-            color: white;
-        }
+.tagline {
+    font-size: 1.1rem;
+    color: #5a3e32;
+    margin-bottom: 1.8rem;
+    border-bottom: 2px dashed #ffcd94;
+    padding-bottom: 0.75rem;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 1.8rem;
-            flex-wrap: wrap;
-        }
+/* ---------- NAVIGATION (flexbox) ---------- */
+.nav-bar {
+    background: #9b2f1f;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: all 0.2s ease;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 4px;
-        }
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-        .nav-links a:hover {
-            border-bottom-color: #ffcd94;
-            color: #ffecb3;
-        }
+.logo-icon {
+    font-size: 1.8rem;
+}
 
-        /* content area */
-        .content-pane {
-            padding: 2.5rem 2rem;
-        }
+.logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.3px;
+    color: white;
+}
 
-        h1 {
-            font-size: 2.3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #b52b1e, #6f1e12);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 0.5rem;
-        }
+.nav-links {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
 
-        h2 {
-            font-size: 1.7rem;
-            font-weight: 700;
-            margin: 1.8rem 0 0.8rem 0;
-            border-left: 6px solid #e62b1e;
-            padding-left: 1rem;
-            color: #2c1810;
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
 
-        h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin: 1.2rem 0 0.6rem 0;
-            color: #9b2f1f;
-        }
+/* HOVER EFFECTS for navigation */
+.nav-links a:hover {
+    border-bottom-color: #ffcd94;
+    color: #ffecb3;
+    transform: translateY(-2px);
+}
 
-        .tagline {
-            font-size: 1.1rem;
-            color: #5a3e32;
-            margin-bottom: 1.8rem;
-            border-bottom: 2px dashed #ffcd94;
-            padding-bottom: 0.75rem;
-        }
+/* ---------- CONTENT AREA ---------- */
+.content-pane {
+    padding: 2.5rem 2rem;
+}
 
-        .badge {
-            background: #ffedd5;
-            color: #9b2f1f;
-            padding: 0.2rem 0.7rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-        }
+/* ---------- BADGES & HIGHLIGHTS ---------- */
+.badge {
+    background: #ffedd5;
+    color: #9b2f1f;
+    padding: 0.2rem 0.7rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
 
-        .cost-highlight {
-            background: #fde4c2;
-            padding: 0.6rem 1rem;
-            border-radius: 60px;
-            display: inline-block;
-            font-weight: 700;
-        }
+/* HOVER EFFECT for badges */
+.badge:hover {
+    background: #ffe0b5;
+    transform: scale(1.02);
+}
 
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: #fff9f2;
-            border-radius: 20px;
-            overflow: hidden;
-            margin: 1rem 0;
-        }
+.cost-highlight {
+    background: #fde4c2;
+    padding: 0.6rem 1rem;
+    border-radius: 60px;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
 
-        .info-table th, .info-table td {
-            border: 1px solid #f0dbc8;
-            padding: 0.8rem 1rem;
-            text-align: left;
-            vertical-align: top;
-        }
+.cost-highlight:hover {
+    background: #fcd8a8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-        .info-table th {
-            background: #9b2f1f;
-            color: white;
-            font-weight: 600;
-        }
+/* ---------- TABLES (responsive) ---------- */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff9f2;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
 
-        .product-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin: 2rem 0 1.5rem;
-        }
+.info-table th,
+.info-table td {
+    border: 1px solid #f0dbc8;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
 
-        .product-card {
-            background: #fffaf5;
-            border-radius: 28px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-            flex: 1 1 260px;
-            padding: 1.6rem 1.2rem;
-            text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s;
-            border: 1px solid #ffe1c4;
-        }
+.info-table th {
+    background: #9b2f1f;
+    color: white;
+    font-weight: 600;
+}
 
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -12px rgba(155, 47, 31, 0.2);
-        }
+/* HOVER EFFECT on table rows */
+.info-table tbody tr:hover {
+    background: #fef1e6;
+    transition: background 0.2s ease;
+}
 
-        .product-icon {
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-        }
+/* ---------- PRODUCT GRID (flexbox + responsive) ---------- */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
 
-        .product-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0.5rem 0;
-        }
+.product-card {
+    background: #df0808;
+    border-radius: 28px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    flex: 1 1 260px;
+    padding: 1.6rem 1.2rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    border: 1px solid #ffe1c4;
+}
 
-        .btn-click {
-            background: #9b2f1f;
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 40px;
-            margin-top: 0.8rem;
-            cursor: pointer;
-            transition: 0.2s;
-            font-size: 0.85rem;
-        }
+/* HOVER EFFECT for product cards */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 28px -12px rgba(155, 47, 31, 0.25);
+    border-color: #f7c9a8;
+}
 
-        .btn-click:hover {
-            background: #bd3e2b;
-            transform: scale(0.97);
-        }
+.product-icon {
+    font-size: 3.5rem;
+    margin-left: 0.5rem;
+}
 
-        .contact-form {
-            background: #fff9f2;
-            border-radius: 28px;
-            padding: 1.8rem;
-            margin: 1.5rem 0;
-            border: 1px solid #ffdec2;
-        }
+.product-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
 
-        .form-group {
-            margin-bottom: 1.2rem;
-        }
+.product-desc {
+    font-size: 0.9rem;
+    color: #4b2e22;
+    margin: 0.5rem 0;
+}
 
-        label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
-            color: #3b241b;
-        }
+/* BUTTON STYLES */
+.btn-click {
+    background: #9b2f1f;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    font-family: inherit;
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            border-radius: 24px;
-            border: 1px solid #e2c7b2;
-            background: white;
-            font-family: inherit;
-            font-size: 1rem;
-        }
+/* HOVER EFFECT for buttons */
+.btn-click:hover {
+    background: #bd3e2b;
+    transform: scale(0.97);
+    box-shadow: 0 4px 10px rgba(155, 47, 31, 0.3);
+}
 
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #e62b1e;
-            box-shadow: 0 0 0 2px rgba(230, 43, 30, 0.2);
-        }
+/* ---------- CONTACT FORM ---------- */
+.contact-form {
+    background: #fff9f2;
+    border-radius: 28px;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    border: 1px solid #ffdec2;
+    transition: box-shadow 0.2s ease;
+}
 
-        .submit-btn {
-            background: #9b2f1f;
-            color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            font-weight: bold;
-            border-radius: 40px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
+.contact-form:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
 
-        footer {
-            background: #f6ede5;
-            padding: 1.8rem 2rem;
-            border-top: 1px solid #ffd8bb;
-            font-size: 0.85rem;
-            color: #3e2a20;
-            text-align: center;
-        }
+.form-group {
+    margin-bottom: 1.2rem;
+}
 
-        @media (max-width: 680px) {
-            body { padding: 1rem; }
-            .content-pane { padding: 1.5rem; }
-            .nav-bar { flex-direction: column; text-align: center; }
-            h1 { font-size: 1.8rem; }
-        }
-    style>
-head>
-body>
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #3b241b;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 24px;
+    border: 1px solid #e2c7b2;
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+/* HOVER & FOCUS effects for form inputs */
+input:hover,
+textarea:hover {
+    border-color: #c9a87e;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e62b1e;
+    box-shadow: 0 0 0 3px rgba(230, 43, 30, 0.1);
+}
+
+.submit-btn {
+    background: #9b2f1f;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+/* HOVER EFFECT for submit button */
+.submit-btn:hover {
+    background: #7a2518;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(155, 47, 31, 0.25);
+}
+
+/* ---------- LISTS ---------- */
+ul, ol {
+    margin: 0.8rem 0;
+    padding-left: 1.8rem;
+}
+
+li {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+
+/* ---------- RESPONSIVE IMAGES ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #d60404;
+    padding: 1.8rem 2rem;
+    border-top: 1px solid #ffd8bb;
+    font-size: 0.85rem;
+    color: #3e2a20;
+    text-align: center;
+}
+
+/* ---------- RESPONSIVE DESIGN (Media Queries - relative units) ---------- */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .content-pane {
+        padding: 1.5rem;
+    }
+    
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .product-grid {
+        gap: 1.2rem;
+    }
+    
+    .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .info-table th,
+    .info-table td {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+    
+    .nav-links {
+        gap: 1.2rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.75rem;
+    }
+    
+    .container {
+        border-radius: 20px;
+    }
+    
+    .content-pane {
+        padding: 1.2rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        margin: 1.2rem 0 0.5rem 0;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    .badge, .cost-highlight {
+        font-size: 0.75rem;
+    }
+    
+    .contact-form {
+        padding: 1.2rem;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    footer {
+        padding: 1.2rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* ---------- UTILITY CLASSES (for professional layout) ---------- */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ---------- ANCHOR & LINK STYLES ---------- */
+a {
+    color: #9b2f1f;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #e62b1e;
+    text-decoration: underline;
+}
+
+/* ---------- HORIZONTAL RULE ---------- */
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #e20808, transparent);
+}       
