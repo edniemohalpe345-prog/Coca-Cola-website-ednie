@@ -91,19 +91,6 @@
         <p>© 2025 Coca-Cola. All rights reserved. Project cost: R700–R1400 | Duration: 4 weeks.</p>
     </footer>
 
-    <script>
-        let formSubmissions = 0;
-        function handleContact(event) {
-            event.preventDefault();
-            formSubmissions++;
-            console.log(`[KPI - Online Engagement] Contact form submitted. Total submissions: ${formSubmissions} at ${new Date().toISOString()}`);
-            alert(`✅ Thank you! Your message has been received.\nCoca-Cola values your engagement. (Total submissions: ${formSubmissions})`);
-            document.getElementById("fullname").value = "";
-            document.getElementById("contactEmail").value = "";
-            document.getElementById("messageText").value = "";
-            return false;
-        }
-        console.log("Contact page ready — form submissions will increase online engagement KPI.");
-    </script>
+    
 </body>
 </html>
