@@ -92,17 +92,6 @@
         <p><strong>Designed for:</strong> Teens, Young Adults & Families — No CSS, only pure HTML for maximum speed and simplicity.</p>
     </footer>
 
-    <!-- Simple KPI tracking simulation for homepage -->
-    <script>
-        console.log("[KPI - Traffic] Homepage loaded at " + new Date().toISOString());
-        let startTime = new Date();
-        window.addEventListener("beforeunload", function() {
-            let timeSpent = Math.floor((new Date() - startTime) / 1000);
-            console.log("[KPI - Time on Site] User spent " + timeSpent + " seconds on homepage.");
-        });
-        document.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => console.log("[KPI - Product Clicks / Navigation] Link clicked: " + link.href));
-        });
-    </script>
+   
 </body>
 </html>
