@@ -97,14 +97,6 @@
         <p>All six files are under 250 lines each, well within the "220 minus" and "200 plus" requirement.</p>
     </footer>
 
-    <script>
-        console.log("Design page loaded — showcasing improvements: simpler navigation, faster loading, KPI-ready.");
-        let designTimer = Date.now();
-        window.addEventListener("click", () => console.log("[Engagement] User interaction on design page."));
-        window.addEventListener("beforeunload", () => {
-            let timeSpentDesign = Math.floor((Date.now() - designTimer)/1000);
-            console.log(`[KPI - Time on Design Page] ${timeSpentDesign} seconds.`);
-        });
-    </script>
+   
 </body>
 </html>
