@@ -5,87 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca-Cola | About & History</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <h1>Coca-Cola® — Our Story</h1>
         <img src="images/about pic.png" width="150" height="150" alt="Coca-Cola logo">
-        <nav>
+        <div class="nav">
             <a href="index.html"> <i class="fa-solid fa-house"></i>Homepage</a> &nbsp;|&nbsp;
             <a href="about.html"> <i class="fa-solid fa-book"></i>About / History</a> &nbsp;|&nbsp;
             <a href="product.html"> <i class="fa-solid fa-cup-straw"></i>Products</a> &nbsp;|&nbsp;
             <a href="contact.html"> <i class="fa-solid fa-phone"></i>Contact</a> &nbsp;|&nbsp;
             <a href="analysis.html"><i class="fa-solid fa-chart-mixed"></i>Analysis</a> &nbsp;|&nbsp;
             <a href="design.html"> <i class="fa-sharp fa-solid fa-paintbrush"></i>Design</a>
-        </nav>
-        <hr>
-    </header>
+        </div>
+      
+    <div class="content-pane">
+        <h1>Coca-Cola Product Range</h1>
+        <div class="tagline">Refreshing the world since 1886 — beverages for teens, families & young adults</div>
 
-    <main>
-        <section>
-            <h2>History of Coca-Cola</h2>
-            <p><strong>1886:</strong> Coca-Cola was founded in Atlanta, Georgia by Dr. John S. Pemberton. The first servings were sold at Jacobs' Pharmacy for 5 cents a glass.</p>
-            <p><strong>Growth:</strong> Coca-Cola has grown into one of the world's most recognized brands and continues to make a difference in communities across 200+ countries.</p>
-            <p><strong>Legacy:</strong> From the iconic contour bottle to "Share a Coke" campaigns, we've always focused on connection, joy, and refreshment.</p>
-            <hr>
-        </section>
+        <h2> Our Story</h2>
+        <p>Coca-Cola was founded in 1886 and has grown into one of the world's most recognized brands. Our mission: refresh the world and make a difference.</p>
 
-        <section>
-            <h2>Mission & Vision</h2>
-            <h3> Mission:</h3>
-            <p><em>"To refresh the world, make a difference."</em></p>
-            <h3> Vision:</h3>
-            <p><em>"To create brands people love."</em></p>
-            <p>We aim to craft beverages that bring people together, inspire happiness, and promote sustainability.</p>
-            <hr>
-        </section>
+        <h2> Explore Our Drinks</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-icon"></div>
+                <div class="product-title">Coca-Cola Classic</div>
+                <div class="product-desc">The original refreshing taste since 1886. Iconic and timeless.</div>
+                <button class="btn-click" onclick="alert(' Product click: Coca-Cola Classic')"> click to engage</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"></div>
+                <div class="product-title">Coca-Cola Zero Sugar</div>
+                <div class="product-desc">All the taste, zero sugar. Bold and crisp.</div>
+                <button class="btn-click" onclick="alert(' Product click: Coca-Cola Zero Sugar')"> click to engage</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"></div>
+                <div class="product-title">Diet Coke</div>
+                <div class="product-desc">Light, crisp and elegant. Perfect for any moment.</div>
+                <button class="btn-click" onclick="alert(' Product click: Diet Coke')"> click to engage</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"></div>
+                <div class="product-title">Fanta Orange</div>
+                <div class="product-desc">Fun, fruity and vibrant made for teens & families.</div>
+                <button class="btn-click" onclick="alert(' Product click: Fanta Orange')"> click to engage</button>
+            </div>
+            <div class="product-card">
+                <div class="product-icon"></div>
+                <div class="product-title">Sprite</div>
+                <div class="product-desc">Clear, lemon-lime crispness to cut through the heat.</div>
+                <button class="btn-click" onclick="alert(' Product click: Sprite')"> click to engage</button>
+            </div>
+        </div>
 
-        <section>
-            <h2>Our Core Values</h2>
-            <ul>
-                <li><strong>Quality:</strong> We deliver the highest standard in every bottle.</li>
-                <li><strong>Inclusion:</strong> Everyone is welcome at our table — teens, families, all backgrounds.</li>
-                <li><strong>Innovation:</strong> Zero Sugar, plant bottles, and new flavors for modern tastes.</li>
-                <li><strong>Sustainability:</strong> World Without Waste initiative — recyclable packaging by 2030.</li>
-            </ul>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Target Audiences in Detail</h2>
-            <p><strong>Teenagers (13–19):</strong> We connect through TikTok, gaming, and limited-edition drops. Fanta and Sprite are top choices.</p>
-            <p><strong>Young Adults (20–30):</strong> Diet Coke, Coca-Cola Zero Sugar, and smartwater align with health-conscious, active lifestyles.</p>
-            <p><strong>Families:</strong> Classic Coke and multi-packs for gatherings, BBQs, and celebrations. Share a Coke with loved ones.</p>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Global Presence</h2>
-            <p> North America | Latin America |  Europe |  Africa |  Asia Pacific</p>
-            <p>In South Africa, Coca-Cola is a proud partner of local communities, supporting education and clean water initiatives.</p>
-            <p><strong>Did you know?</strong> The Coca-Cola system employs over 700,000 people worldwide.</p>
-            <hr>
-        </section>
-
-        <section>
-            <h2>Milestones & Achievements</h2>
-            <ul>
-                <li>1894 – First bottled Coca-Cola.</li>
-                <li>1915 – Iconic contour bottle design patented.</li>
-                <li>1985 – "New Coke" and return of Classic formula.</li>
-                <li>2016 – "One Brand" global strategy launched.</li>
-                <li>2024 – Over 1.9 billion servings served daily.</li>
-            </ul>
-        </section>
-    </main>
+        <h2> Brand Highlights</h2>
+        <p>Strong branding, clear visuals, and continuous improvement for simpler navigation and faster loading speed.</p>
+    </div>
 
     <footer>
-        <hr>
-        <p><strong>References:</strong> Official Coca-Cola archives, Company history reports, Marketing textbooks.</p>
-        <p>© 2025 Coca-Cola. All rights reserved. This page is part of the 4-week web design project (Budget: R700–R1400).</p>
+        <p> Coca-Cola · "To refresh the world, make a difference" | 4 Weeks · R700-R1400</p>
+        <p> KPIs: traffic · time on site · product clicks</p>
     </footer>
-
-  
+</div>
 </body>
 </html>
